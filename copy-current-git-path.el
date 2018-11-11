@@ -29,6 +29,6 @@
 
 ;; * provide
 
-(provide 'faker)
+(provide 'copy-current-git-path)
 
 ;;; copy-current-git-path.el ends here

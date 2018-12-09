@@ -15,9 +15,9 @@
 (defun get-git-filepath ()
   "Get relative current path from git dir."
   (let* ((path buffer-file-name)
-	 (root (file-truename (vc-git-root path))))
-    (let ((filepath-from-git-root (file-relative-name path root)))
-      (message filepath-from-git-root))))
+	 (root (file-truename (vc-git-root path)))
+	 (filepath-from-git-root (file-relative-name path root)))
+    (message filepath-from-git-root)))
 
 (defun copy-current-git-path ()
   "Copy relative current path from git dir to clipboard."
